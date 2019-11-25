@@ -1,0 +1,43 @@
+:root {
+  --transparent: transparent;
+
+  /* Grayscale */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-grey-100: #F5F5F5;
+  --color-grey-200: #E5E5E5;
+  --color-grey-300: #C5C5C5;
+  --color-grey-400: #B5B5B5;
+  --color-grey-500: #454545;
+  --color-grey-600: #353535;
+  --color-grey-700: #252525;
+  --color-grey-800: #151515;
+
+  /* Colour */
+  --colour-scarlet: #ED2939;
+  --colour-red: #E60F0F;
+  --colour-amber: #FFBF00;
+  --colour-orange: #F99500;
+  --colour-yellow: #FFE900;
+  --colour-chartreuse: #7BFF00;
+  --colour-green: #00873E;
+  --colour-teal: #66CBD5;
+  --colour-blue: #2222FF;
+  --colour-violet: #8A2BE2;
+  --colour-purple: #8B189B;
+  --colour-magenta: #FF0090;
+
+  /* Default Origin Colours */
+  --color-primary-400: #3B098C;
+  --color-primary-500: #28055F;
+  --color-primary-600: #11012B;
+  --color-secondary-400: #055483;
+  --color-secondary-500: #033959;
+  --color-secondary-600: #011928;
+  --color-tertiary-400: #B20045;
+  --color-tertiary-500: #79002F;
+  --color-tertiary-600: #360015;
+
+  /* Promotional colors */
+  --text-banner-background: #055483;
+}

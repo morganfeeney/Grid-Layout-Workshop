@@ -1,0 +1,8 @@
+:root {
+  --button-default-padding: 1.5rem;
+  --button-default-height: 3rem;
+  --button-default-icon-margin: 1rem;
+  --button-small-padding: 1rem;
+  --button-small-height: 2rem;
+  --button-small-icon-margin: 0.5rem;
+}

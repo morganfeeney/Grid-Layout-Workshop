@@ -1,0 +1,7 @@
+h1,
+.mainHeading {
+  font-family: var(--heading-font-family, inherit);
+  font-size: var(--font-size-display-6);
+  line-height: var(--line-height-display-6);
+  font-weight: var(--heading-font-weight);
+}

@@ -1,0 +1,12 @@
+.containerGrid {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+@supports (display: grid) {
+  .containerGrid {
+    display: grid;
+    grid-template-columns: var(--container-grid);
+  }
+}

@@ -1,0 +1,16 @@
+/* stylelint-disable */
+@font-face {
+  font-family: "CircularBook";
+  src: var(--circular-book-eot);
+  src: var(--circular-book-woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularBold";
+  src: var(--circular-bold-eot);
+  src: var(--circular-bold-woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

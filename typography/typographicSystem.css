@@ -1,0 +1,25 @@
+:root {
+  /* Font size */
+  --font-size-small-print: 0.625rem; /* 10px */
+  --font-size-body-small: 0.813rem; /* 13px */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-body-large: 1.25rem; /* 20px */
+  --font-size-display-6: 1.5rem; /* 24px */
+  --font-size-display-5: 1.875rem; /* 30px */
+  --font-size-display-4: 2.25rem; /* 36px */
+  --font-size-display-3: 3rem;  /* 48px */
+  --font-size-display-2: 3.75rem; /* 60px */
+  --font-size-display-1: 4.5rem; /* 72px */
+
+  /* Line height */
+  --line-height-small-print: 1rem; /* 16px */
+  --line-height-body-small: 1.25rem; /* 20px */
+  --line-height-body: 1.5rem; /* 24px */
+  --line-height-body-large: 1.75rem; /* 28px */
+  --line-height-display-6: 2rem; /* 32px */
+  --line-height-display-5: 2.5rem; /* 40px */
+  --line-height-display-4: 3.25rem; /* 52px */
+  --line-height-display-3: 3rem; /* 48px */
+  --line-height-display-2: 4.75rem; /* 76px */
+  --line-height-display-1: 5.25rem; /* 84px */
+}

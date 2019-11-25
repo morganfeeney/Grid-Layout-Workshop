@@ -1,0 +1,114 @@
+:root {
+  /* Fluid Margin
+   *
+   * Calculate fluid margin using vw units and container widths
+   */
+  --excess-width: calc(100vw - var(--container-width));
+  --fluid-margin: calc((var(--excess-width) / 2));
+
+  /* Container widths
+   *
+   * Account for the total size of columns, gutters and margins combined.
+   * The widths come from Google Analytics and are based on devices used by visitors
+   * to all NBrown websites. They are also used by designers.
+   */
+  --container-width-1: 100vw;
+  --container-width-2: 320px;
+  --container-width-3: 360px;
+  --container-width-4: 375px;
+  --container-width-5: 414px;
+  --container-width-6: 568px;
+  --container-width-7: 640px;
+  --container-width-8: 667px;
+  --container-width-9: 768px;
+  --container-width-10: 1024px;
+  --container-width-11: 1366px;
+  --container-width-12: 1600px;
+  --container-width: var(--container-width-2);
+
+  /* Grid margins
+   *
+   * They are only used in one place, either side of the `.container-grid`.
+   */
+  --margin-1: 1rem;
+  --margin-2: 1.5rem;
+  --margin: var(--margin-1);
+
+  /* Gutters
+   *
+   * Used for creating small gutter sized columns and for use with `grid-gap`.
+   */
+  --grid-gap: 1rem;
+  --gutter-x: var(--grid-gap);
+
+  /* Columns */
+  --column-count-320: 4;
+  --column-count-360: 4;
+  --column-count-414: 6;
+  --column-count-768: 12;
+  --column-count-1024: 16;
+  --column-count-1366: 16;
+  --column-count: var(--column-count-320);
+  --column-width: 1fr;
+
+  /* Rows */
+  --row-height-320: 4.5rem; /* 72px */
+  --row-height-360: 4.5rem;
+  --row-height-414: 4.5rem;
+  --row-height-768: 4.5rem;
+  --row-height-1024: 4.5rem;
+  --row-height-1366: 6rem; /* 96px */
+  --row-height: var(--row-height-320);
+
+  /* Container Grid
+   *
+   * As we are using Named Grid Lines in --container-grid-template,
+   * e.g. [fluid-margin-start], passing in these variables
+   * allow the code to be more D.R.Y. Only the grid columns
+   * change in quantity. Requires 1 less column than other grids.
+   */
+  --container-grid-column-count-320: 7;
+  --container-grid-column-count-360: 7;
+  --container-grid-column-count-375: 7;
+  --container-grid-column-count-414: 7;
+  --container-grid-column-count-768: 11;
+  --container-grid-column-count-1024: 11;
+  --container-grid-column-count-1366: 15;
+  --container-grid-column-count-1920: 15;
+  --container-grid-column-count: var(--container-grid-column-count-320);
+  --container-grid: var(--container-grid-template);
+  --container-grid-column-span: container;
+
+  /* Succinct variables for use with --container-grid-template */
+  --m: var(--margin);
+  --g: var(--gutter-x);
+  --c: var(--column-width);
+
+  /* --container-grid-template
+   *
+   * We're using named-grid-lines as alias', e.g. [fluid-margin-start]
+   * for spanning across ranges of columns across multiple breakpoints
+   * in a D.R.Y. fashion. The slug 'margin' is not to be confused with
+   * the CSS property, it relates directly to Origin's design terminology.
+   * https://nbrown-origin.netlify.com/design/layout.html#column-grid
+   */
+  --container-grid-template:
+    [fluid-margin-start]
+    var(--fluid-margin)
+    [margin-start]
+    var(--m)
+    [container-start]
+    var(--c) repeat(var(--container-grid-column-count), var(--g) var(--c))
+    [container-end]
+    var(--m)
+    [margin-end]
+    var(--fluid-margin)
+    [fluid-margin-end];
+}
+
+:root {
+  --row-height: var(--row-height-768);
+  --column-count: var(--column-count-768);
+  --container-grid-column-count: var(--container-grid-column-count-768);
+  --container-width: var(--container-width-9);
+}
