@@ -13,3 +13,39 @@ p {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
 }
+
+.display1 {
+  font-size: var(--font-size-display-1);
+  line-height: var(--line-height-display-1);
+}
+
+.display2 {
+  font-size: var(--font-size-display-2);
+  line-height: var(--line-height-display-2);
+}
+
+.display3 {
+  font-size: var(--font-size-display-3);
+  line-height: var(--line-height-display-3);
+}
+
+.display4 {
+  font-size: var(--font-size-display-4);
+  line-height: var(--line-height-display-4);
+}
+
+.display5 {
+  font-size: var(--font-size-display-5);
+  line-height: var(--line-height-display-5);
+}
+
+.display6 {
+  font-size: var(--font-size-display-6);
+  line-height: var(--line-height-display-6);
+}
+
+.smallPrint {
+  font-size: var(--font-size-small-print);
+  line-height: var(--line-height-small-print);
+  text-transform: uppercase;
+}

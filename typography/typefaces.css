@@ -1,5 +1,5 @@
 :root {
-  --default-font-family: arial, helvetica, sans-serif;
+  --default-font-family: 'Poppins', helvetica, sans-serif;
   --heading-font-family: var(--default-font-family);
   --heading-font-weight: bold;
   --default-font-weight: normal;
