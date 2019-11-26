@@ -24,8 +24,10 @@
   border-radius: 0.25rem;
   color: var(--color-white);
   cursor: pointer;
+}
 
-  @supports (display: grid) {
+@supports (display: grid) {
+  .Button__label {
     display: grid;
     grid-auto-flow: column;
     gap: 0.5rem;

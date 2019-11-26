@@ -2,6 +2,15 @@
   grid-column: margin;
   display: grid;
   height: 14rem;
+  grid-template-columns:
+    [banner-margin-start]
+    var(--gutter-x)
+    [banner-content-start]
+    1fr
+    [banner-content-end]
+    var(--gutter-x)
+    [banner-margin-end];
+  grid-template-rows: [banner-start] 1fr [banner-end];
 }
 
 .Banner__title {
@@ -13,4 +22,20 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+  grid-column: banner-margin;
+  grid-row: banner;
+}
+
+.Banner__content {
+  grid-column: banner-content;
+  grid-row: banner;
+  display: grid;
+  align-content: center;
+  z-index: 1;
+  row-gap: 0.5rem;
+}
+
+.Banner_button .Button__label {
+  background: var(--color-tertiary-400);
+  border-color: var(--color-tertiary-400);
 }
