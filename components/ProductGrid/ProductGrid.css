@@ -1,0 +1,12 @@
+.ProductGrid {
+  grid-column: container;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: var(--gutter-x);
+}
+
+.ProductGrid__title {
+  grid-column: span 3;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}

@@ -5,54 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DeliverWHO?</title>
+  <meta name="description" content="Deliver WHO? are Manchester’s answer to Deliveroo,
+    They specialise in the delivery of food, alcohol and e-cigarettes, but only between the hours of 2—6am." />
   <link rel="stylesheet" href="/essential.css">
+  <link rel="stylesheet" href="/components/Header/Header.css">
+  <link rel="stylesheet" href="/components/ProductListPage/ProductListPage.css">
+  <link rel="stylesheet" href="/components/ProductGrid/ProductGrid.css">
   <link rel="stylesheet" href="/components/Button/Button.css">
-  <style>
-    .content {
-      grid-column: container
-    }
-    .Logo {
-      grid-column: 2 / span 5;
-    }
-    .Header {
-      display: grid;
-      align-items: center;
-    }
-    .Header__button {
-      grid-column: 23 / span 3;
-      justify-self: end;
-    }
-    .ProductGrid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: var(--gutter-x);
-    }
-    .ProductFragment {
-      display: grid;
-    }
-    .ProductFragment__overline {
-      line-height: var(--line-height-body)
-    }
-    .ProductFragment__details {
-      display: grid;
-    }
-    .ProductFragment__price {
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="/components/Banner/Banner.css">
+  <link rel="stylesheet" href="/components/ProductFragment/ProductFragment.css">
 </head>
-<body>
+<body class="ProductListPage">
   <header class="containerGrid Header">
-    <img class="Logo" src="/assets/images/logo-03.svg" alt="Deliverwho logo">
+    <img class="Header__logo" src="/assets/images/logo-03.svg" alt="Deliverwho logo">
     <button class="Button Button_primary Header__button">
       <div class="Button__label">Menu</div>
     </button>
   </header>
   <main class="containerGrid">
-    <section class="content">
-      <h1 class="display3">Products</h1>
-      <h2 class="display5">Beer</h2>
+      <h1 class="ProductListPage__title display3">Products</h1>
       <section class="ProductGrid">
+        <h2 class="ProductGrid__title display5">Beer</h2>
         <div class="ProductFragment">
           <span class="smallPrint ProductFragment__overline">Resinous hop notes</span>
           <img class="ProductFragment__image" src="/assets/images/beer/DDH_Pale_f_800x.jpg" alt="DDH Pale">
@@ -61,7 +34,51 @@
             <span class="ProductFragment__price">£4.50</span>
           </div>
         </div>
+        <div class="ProductFragment">
+          <img class="ProductFragment__image" src="/assets/images/beer/DIPA_f_800x.jpg" alt="DDH Pale">
+          <div class="ProductFragment__details">
+            <span class="ProductFragment__title">DIPA</span>
+            <span class="ProductFragment__price">£5.75</span>
+          </div>
+        </div>
+        <div class="ProductFragment">
+          <span class="smallPrint ProductFragment__overline">Won't get you out of your skull</span>
+          <img class="ProductFragment__image" src="/assets/images/beer/Small_Pale_f_800x.jpg" alt="DDH Pale">
+          <div class="ProductFragment__details">
+            <span class="ProductFragment__title">DDH Pale</span>
+            <span class="ProductFragment__price">£4.50</span>
+          </div>
+        </div>
       </section>
+    <aside class="Banner">
+      <span class="Banner__title display5">e-cigs</span>
+      <img class="Banner__image" src="/assets/images/e-cigs/download.jpeg" alt="e-cigs">
+    </aside>
+      <section class="ProductGrid">
+      <h2 class="ProductGrid__title display5">Food</h2>
+        <div class="ProductFragment">
+          <img class="ProductFragment__image" src="/assets/images/food/shawrma.jpg" alt="Chicken shawarma">
+          <div class="ProductFragment__details">
+            <span class="ProductFragment__title">Chicken shawarma</span>
+            <span class="ProductFragment__price">£6.99</span>
+          </div>
+        </div>
+        <div class="ProductFragment">
+          <span class="smallPrint ProductFragment__overline">Chef's special sauce</span>
+          <img class="ProductFragment__image" src="/assets/images/food/kofta-with-extra-mayo.jpg" alt="Turkish lamb kofta kebabs">
+          <div class="ProductFragment__details">
+            <span class="ProductFragment__title">Turkish lamb kofta kebabs</span>
+            <span class="ProductFragment__price">£9.99</span>
+          </div>
+        </div>
+        <div class="ProductFragment">
+          <span class="smallPrint ProductFragment__overline">Won't get you out of your skull</span>
+          <img class="ProductFragment__image" src="/assets/images/food/vegan-doner-kebap1.jpg" alt="Vegan doner kebab">
+          <div class="ProductFragment__details">
+            <span class="ProductFragment__title">Vegan doner kebab</span>
+            <span class="ProductFragment__price">£19.99</span>
+          </div>
+        </div>
     </section>
   </main>
 </body>

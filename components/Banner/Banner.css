@@ -1,0 +1,16 @@
+.Banner {
+  grid-column: margin;
+  display: grid;
+  height: 14rem;
+}
+
+.Banner__title {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.Banner__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
