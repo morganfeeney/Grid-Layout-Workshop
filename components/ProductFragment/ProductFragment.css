@@ -1,6 +1,6 @@
 .ProductFragment {
   display: grid;
-  grid-template-rows: 1.5rem 1fr 6rem;
+  grid-template-rows: 1.5rem 14.5rem 6rem;
 }
 
 .ProductFragment__overline {
@@ -10,6 +10,9 @@
 
 .ProductFragment__image {
   grid-row: 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .ProductFragment__details {

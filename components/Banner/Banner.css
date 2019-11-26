@@ -11,6 +11,18 @@
     var(--gutter-x)
     [banner-margin-end];
   grid-template-rows: [banner-start] 1fr [banner-end];
+  position: relative;
+}
+
+.Banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
 .Banner__title {
