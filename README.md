@@ -7,3 +7,18 @@ There is nothing to setup, all you need is a modern browser, I recommend using [
 In the root directory of this project open terminal and run the following command: `php -S localhost:8000`
 
 Open up the web address: `localhost:8000` to see the site running in your browser.
+
+## Let's get started
+Each step relates to a branch which can be checked out.
+
+### Step 1
+Setup the CSS from Origin, assets and other dependencies.
+
+### Step 2
+Setup the layout containers and the product fragment.
+
+### Step 3
+Create a banner component.
+
+### Step 4
+Create the header and footer components.
