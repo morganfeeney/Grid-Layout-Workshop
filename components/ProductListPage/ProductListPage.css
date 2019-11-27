@@ -1,4 +1,11 @@
+@supports (display: grid) {
+  .containerGrid {
+    grid-row-gap: 2rem;
+  }
+}
+
 .ProductListPage__title {
   margin-top: 4.5rem;
+  margin-bottom: 1rem;
   grid-column: container;
 }
