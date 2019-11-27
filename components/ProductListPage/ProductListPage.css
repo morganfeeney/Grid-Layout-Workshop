@@ -1,7 +1,5 @@
-@supports (display: grid) {
-  .containerGrid {
-    grid-row-gap: 2rem;
-  }
+.ProductListPage__main {
+  grid-row-gap: 2rem;
 }
 
 .ProductListPage__title {
