@@ -1,6 +1,7 @@
 .Header {
-display: grid;
-align-items: center;
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-200);
 }
 
 .Header__logo {
